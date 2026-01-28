@@ -1,1 +1,0 @@
-# Nazar_Labs_College
