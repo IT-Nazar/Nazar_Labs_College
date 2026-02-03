@@ -22,19 +22,151 @@
 
                 <p>
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" placeholder="Enter your Email"
+                    <input type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email">
                 </p>
 
                 <p>
                     <label for="password">Password:</label>
-                    <input type="text" id="password" name="password" placeholder="Enter your Password"
+                    <input type="text"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your Password">
                 </p>
 
                 <p>
-                    <lapel for="age">Age:</lapel>
-                    <input type="text" id="age" name="age" size="5"
+                    <label for="age">Age:</label>
+                    <input type="text"
+                    id="age"
+                    name="age"
+                    size="5">
+                </p>
+
+                <p>
+                    <label for="date of birth">Date of Birth:</label>
+                    <input type="date"
+                    id="start"
+                    name="trip-start"
+                    value="2018-07-22"
+                    min="2010-01-01"
+                    max="2030-12-31" />
+                </p>
+
+                <p>Gender:</p>
+                <div>
+                  <input type="radio" id="male" name="gender" value="male" checked
+                  <label for="male">Male</label>
+                </div>
+                <div>
+                  <input type="radio" id="female" name="gender" value="female" checked
+                  <label for="female">Female</label>
+                </div>
+                <div>
+                  <input type="radio" id="other" name="gender" value="other" checked
+                  <label for="other">Other</label>
+                </div>
+
+                <p>Languages Known:</p>
+                <div>
+                  <input type="checkbox" id="english" name="languages" value="english" checked
+                  <label for="englich">English</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="Spanish" name="languages" value="spanish" checked
+                  <label for="spanish">Spanish</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="french" name="langbages" value="franch" checked
+                  <label for="languages">Franch</label>
+                </div>
+
+                <p>Country:
+                <select name="country" id="country-select">
+                    <option value="country">Select your counry</option>
+                    <option value="ukraine">Ukraine</option>
+                    <option value="poland">Poland</option>
+                    <option value="italy">Italy</option>
+                    <option value="united arab emirates">UAE</option>
+                    <option value="united kindoms">United Kindoms</option>
+                </select>
                 </p>
             </fieldset>
+
+            <h1>College Subjects</h1>
+
+            <fieldset>
+                <legend>Select your subjects</legend>
+
+                <p>Choose Іubjects:</p>
+                <select id="subject" name="subject" multiple>
+                    <option value="mathematics">Mathematics</option>
+                    <option value="computer sciense">Computer Scinse</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="biology">Biology</option>
+                </select>
+
+                <p>Rate your interest computer sciense:
+                    <input
+                        type="range"
+                        id="interest"
+                        name="interest"
+                        min="0"
+                        max="10"/>
+                </p>
+            </fieldset>
+
+            <h1>Skills Assessment</h1>
+
+            <fieldset>
+                <legend>Asses your skills</legend>
+
+                <p>Describe your skills:</p>
+                <textarea
+                    id="skills"
+                    name="skills"
+                    rows="10"
+                    cols="50"
+                    placeholder="List your skills here..."></textarea>
+
+                <p>Upload your resume:
+                    <input
+                        type="file"
+                        id="avatar"
+                        name="avatar"
+                        accept="image/png, image/jpeg"/>
+                </p>
+
+                <p>Pick your favorite color:
+                    <input
+                        type="color"
+                        id="backgroung"
+                        name="background"
+                        value="#e000"
+                    />
+                </p>
+
+                <p>Preferred study time:
+                    <input
+                        type="time"
+                        id="appointment"
+                        name="appointment"
+                        min="00:00"
+                        max="24:00"
+                        required
+                    />
+                </p>
+
+                <button
+                    class="button"
+                    type="button">Submit Survey</button>
+            </fieldset>
+
+            <footer>
+                <p>&COPY; Student card by Nazariy Buben. All rights reserved.</p>
+            </footer>
         </section>
     </main>
 </body>
