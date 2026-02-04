@@ -11,7 +11,7 @@
     </header>
 
     <main>
-        <form action="#" method="post">
+        <form action="#" method="post" enctype="multipart/form-data">
 
             <section>
                 <h2>Personal Information</h2>
@@ -90,7 +90,7 @@
                 <fieldset>
                     <legend>Select your subjects</legend>
 
-                    <p>Choose subjects (hold Ctrl to select multiple):</p>
+                    <p>Choose subjects:</p>
                     <select id="subjects" name="subjects" multiple size="4">
                         <option value="math">Mathematics</option>
                         <option value="cs">Computer Science</option>
@@ -130,7 +130,6 @@
                     </p>
 
                     <button type="submit">Submit Survey</button>
-                    <button type="reset">Reset Form</button>
                 </fieldset>
             </section>
         </form>
