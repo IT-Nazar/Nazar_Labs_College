@@ -2,171 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student card</title>
 </head>
 <body>
     <header>
-        <h1>Student Card FROM</h1>
+        <h1>Student Card Form</h1>
     </header>
 
     <main>
-        <section>
-            <h2>Personal Information</h2>
-            <fieldset>
-                <legend>Provide your details</legend>
+        <form action="#" method="post">
 
-                <p>
-                <label for="fname">Full Name:</label>
-                <input type="text" id="fname" name="fname" placeholder="Enter your full name">
-                </p>
+            <section>
+                <h2>Personal Information</h2>
+                <fieldset>
+                    <legend>Provide your details</legend>
 
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your Email">
-                </p>
+                    <p>
+                        <label for="fname">Full Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your full name">
+                    </p>
 
-                <p>
-                    <label for="password">Password:</label>
-                    <input type="text"
-                    id="password"
-                    name="password"
-                    placeholder="Enter your Password">
-                </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </p>
 
-                <p>
-                    <label for="age">Age:</label>
-                    <input type="text"
-                    id="age"
-                    name="age"
-                    size="5">
-                </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                    </p>
 
-                <p>
-                    <label for="date of birth">Date of Birth:</label>
-                    <input type="date"
-                    id="start"
-                    name="trip-start"
-                    value="2018-07-22"
-                    min="2010-01-01"
-                    max="2030-12-31" />
-                </p>
+                    <p>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="1" max="99" size="5">
+                    </p>
 
-                <p>Gender:</p>
-                <div>
-                  <input type="radio" id="male" name="gender" value="male" checked
-                  <label for="male">Male</label>
-                </div>
-                <div>
-                  <input type="radio" id="female" name="gender" value="female" checked
-                  <label for="female">Female</label>
-                </div>
-                <div>
-                  <input type="radio" id="other" name="gender" value="other" checked
-                  <label for="other">Other</label>
-                </div>
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" value="2005-01-01">
+                    </p>
 
-                <p>Languages Known:</p>
-                <div>
-                  <input type="checkbox" id="english" name="languages" value="english" checked
-                  <label for="englich">English</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="Spanish" name="languages" value="spanish" checked
-                  <label for="spanish">Spanish</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="french" name="langbages" value="franch" checked
-                  <label for="languages">Franch</label>
-                </div>
+                    <p>Gender:</p>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
 
-                <p>Country:
-                <select name="country" id="country-select">
-                    <option value="country">Select your counry</option>
-                    <option value="ukraine">Ukraine</option>
-                    <option value="poland">Poland</option>
-                    <option value="italy">Italy</option>
-                    <option value="united arab emirates">UAE</option>
-                    <option value="united kindoms">United Kindoms</option>
-                </select>
-                </p>
-            </fieldset>
+                    <p>Languages Known:</p>
+                    <div>
+                        <input type="checkbox" id="english" name="languages" value="english" checked>
+                        <label for="english">English</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="spanish" name="languages" value="spanish">
+                        <label for="spanish">Spanish</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="french" name="languages" value="french">
+                        <label for="french">French</label>
+                    </div>
 
-            <h1>College Subjects</h1>
+                    <p>
+                        <label for="country">Country:</label>
+                        <select name="country" id="country">
+                            <option value="" disabled selected hidden>Select your country</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="poland">Poland</option>
+                            <option value="italy">Italy</option>
+                            <option value="uae">UAE</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </section>
 
-            <fieldset>
-                <legend>Select your subjects</legend>
+            <section>
+                <h2>College Subjects</h2>
+                <fieldset>
+                    <legend>Select your subjects</legend>
 
-                <p>Choose Іubjects:</p>
-                <select id="subject" name="subject" multiple>
-                    <option value="mathematics">Mathematics</option>
-                    <option value="computer sciense">Computer Scinse</option>
-                    <option value="physics">Physics</option>
-                    <option value="chemistry">Chemistry</option>
-                    <option value="biology">Biology</option>
-                </select>
+                    <p>Choose subjects (hold Ctrl to select multiple):</p>
+                    <select id="subjects" name="subjects" multiple size="4">
+                        <option value="math">Mathematics</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="biology">Biology</option>
+                    </select>
 
-                <p>Rate your interest computer sciense:
-                    <input
-                        type="range"
-                        id="interest"
-                        name="interest"
-                        min="0"
-                        max="10"/>
-                </p>
-            </fieldset>
+                    <p>
+                        <label for="interest">Rate your interest in Computer Science:</label><br>
+                        <input type="range" id="interest" name="interest" min="0" max="100" value="80">
+                    </p>
+                </fieldset>
+            </section>
 
-            <h1>Skills Assessment</h1>
+            <section>
+                <h2>Skills Assessment</h2>
+                <fieldset>
+                    <legend>Assess your skills</legend>
 
-            <fieldset>
-                <legend>Asses your skills</legend>
+                    <p>Describe your skills:</p>
+                    <textarea id="skills" name="skills" rows="10" cols="50" placeholder="List your skills here..."></textarea>
 
-                <p>Describe your skills:</p>
-                <textarea
-                    id="skills"
-                    name="skills"
-                    rows="10"
-                    cols="50"
-                    placeholder="List your skills here..."></textarea>
+                    <p>
+                        <label for="resume">Upload your resume:</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                    </p>
 
-                <p>Upload your resume:
-                    <input
-                        type="file"
-                        id="avatar"
-                        name="avatar"
-                        accept="image/png, image/jpeg"/>
-                </p>
+                    <p>
+                        <label for="favcolor">Pick your favorite color:</label>
+                        <input type="color" id="favcolor" name="favcolor" value="#0000ff">
+                    </p>
 
-                <p>Pick your favorite color:
-                    <input
-                        type="color"
-                        id="backgroung"
-                        name="background"
-                        value="#e000"
-                    />
-                </p>
+                    <p>
+                        <label for="study-time">Preferred study time:</label>
+                        <input type="time" id="study-time" name="study-time">
+                    </p>
 
-                <p>Preferred study time:
-                    <input
-                        type="time"
-                        id="appointment"
-                        name="appointment"
-                        min="00:00"
-                        max="24:00"
-                        required
-                    />
-                </p>
-
-                <button
-                    class="button"
-                    type="button">Submit Survey</button>
-            </fieldset>
-
-            <footer>
-                <p>&COPY; Student card by Nazariy Buben. All rights reserved.</p>
-            </footer>
-        </section>
+                    <button type="submit">Submit Survey</button>
+                    <button type="reset">Reset Form</button>
+                </fieldset>
+            </section>
+        </form>
     </main>
+
+    <footer>
+        <p>&copy; Student card by Nazariy Buben. All rights reserved.</p>
+    </footer>
 </body>
+</html>
